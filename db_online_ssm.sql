@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : 本地连接
-Source Server Version : 50505
+Source Server         : localhost_3306
+Source Server Version : 50725
 Source Host           : localhost:3306
 Source Database       : db_online_ssm
 
 Target Server Type    : MYSQL
-Target Server Version : 50505
+Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2018-10-19 15:50:09
+Date: 2019-04-19 13:32:06
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -46,26 +46,26 @@ CREATE TABLE `classinfo` (
 -- ----------------------------
 -- Records of classinfo
 -- ----------------------------
-INSERT INTO `classinfo` VALUES ('1', '高一一班', '1', '2');
-INSERT INTO `classinfo` VALUES ('2', '高一二班', '1', '1');
-INSERT INTO `classinfo` VALUES ('3', '高一三班', '1', '3');
-INSERT INTO `classinfo` VALUES ('4', '高一四班', '1', '4');
-INSERT INTO `classinfo` VALUES ('5', '高一五班', '1', '5');
-INSERT INTO `classinfo` VALUES ('6', '高一六班', '1', '6');
-INSERT INTO `classinfo` VALUES ('7', '高二一班', '2', '7');
-INSERT INTO `classinfo` VALUES ('8', '高二二班', '2', '8');
-INSERT INTO `classinfo` VALUES ('9', '高二三班', '2', '9');
-INSERT INTO `classinfo` VALUES ('10', '高二四班', '2', '10');
-INSERT INTO `classinfo` VALUES ('11', '高二五班', '2', '11');
-INSERT INTO `classinfo` VALUES ('12', '高二六班', '2', '12');
-INSERT INTO `classinfo` VALUES ('13', '高三一班', '3', '13');
-INSERT INTO `classinfo` VALUES ('14', '高三二班', '3', '14');
-INSERT INTO `classinfo` VALUES ('15', '高三三班', '3', '15');
-INSERT INTO `classinfo` VALUES ('16', '高三四班', '3', '16');
-INSERT INTO `classinfo` VALUES ('17', '高三五班', '3', '17');
-INSERT INTO `classinfo` VALUES ('18', '高三六班', '3', '18');
-INSERT INTO `classinfo` VALUES ('19', '软件1501', '4', '21');
-INSERT INTO `classinfo` VALUES ('20', '网络安全1501', '4', '22');
+INSERT INTO `classinfo` VALUES ('1', '软1501', '1', '2');
+INSERT INTO `classinfo` VALUES ('2', '软1502', '1', '1');
+INSERT INTO `classinfo` VALUES ('3', '软1503', '1', '3');
+INSERT INTO `classinfo` VALUES ('4', '软1504', '1', '4');
+INSERT INTO `classinfo` VALUES ('5', '软1505', '1', '5');
+INSERT INTO `classinfo` VALUES ('6', '软1506', '1', '6');
+INSERT INTO `classinfo` VALUES ('7', '软日1501', '2', '7');
+INSERT INTO `classinfo` VALUES ('8', '软日1502', '2', '8');
+INSERT INTO `classinfo` VALUES ('9', '软日1503', '2', '9');
+INSERT INTO `classinfo` VALUES ('10', '软日1504', '2', '10');
+INSERT INTO `classinfo` VALUES ('11', '软日1505', '2', '11');
+INSERT INTO `classinfo` VALUES ('12', '软日1506', '2', '12');
+INSERT INTO `classinfo` VALUES ('13', '软网1501', '3', '13');
+INSERT INTO `classinfo` VALUES ('14', '软网1502', '3', '14');
+INSERT INTO `classinfo` VALUES ('15', '软网1503', '3', '15');
+INSERT INTO `classinfo` VALUES ('16', '软网1504', '3', '16');
+INSERT INTO `classinfo` VALUES ('17', '软网1505', '3', '17');
+INSERT INTO `classinfo` VALUES ('18', '软网1506', '3', '18');
+INSERT INTO `classinfo` VALUES ('19', '树莓1501', '4', '21');
+INSERT INTO `classinfo` VALUES ('20', '树莓1502', '4', '22');
 
 -- ----------------------------
 -- Table structure for `courseinfo`
@@ -84,15 +84,15 @@ CREATE TABLE `courseinfo` (
 -- ----------------------------
 -- Records of courseinfo
 -- ----------------------------
-INSERT INTO `courseinfo` VALUES ('1', '语文', '1', '3');
-INSERT INTO `courseinfo` VALUES ('2', '数学', '0', '2');
-INSERT INTO `courseinfo` VALUES ('3', '英语', '1', '1');
-INSERT INTO `courseinfo` VALUES ('4', '常识题', '0', '1');
-INSERT INTO `courseinfo` VALUES ('5', '理化类', '0', '1');
-INSERT INTO `courseinfo` VALUES ('6', '天文类', '0', '1');
-INSERT INTO `courseinfo` VALUES ('7', '文史类', '0', '1');
-INSERT INTO `courseinfo` VALUES ('8', '文体类', '0', '1');
-INSERT INTO `courseinfo` VALUES ('9', '计算机常识', '0', '4');
+INSERT INTO `courseinfo` VALUES ('1', '数据结构', '1', '3');
+INSERT INTO `courseinfo` VALUES ('2', '工数（一）', '0', '2');
+INSERT INTO `courseinfo` VALUES ('3', '计算机网络', '1', '1');
+INSERT INTO `courseinfo` VALUES ('4', '操作系统', '0', '1');
+INSERT INTO `courseinfo` VALUES ('5', '先秦君子风范', '0', '1');
+INSERT INTO `courseinfo` VALUES ('6', '网络安全导论', '0', '1');
+INSERT INTO `courseinfo` VALUES ('7', '实习实训', '0', '1');
+INSERT INTO `courseinfo` VALUES ('8', 'C语言课程设计', '0', '1');
+INSERT INTO `courseinfo` VALUES ('9', '数字与模拟电路设计', '0', '4');
 INSERT INTO `courseinfo` VALUES ('10', '网络安全', '2', '4');
 
 -- ----------------------------
@@ -206,12 +206,12 @@ CREATE TABLE `exampaperinfo` (
 -- ----------------------------
 -- Records of exampaperinfo
 -- ----------------------------
-INSERT INTO `exampaperinfo` VALUES ('1', '语文三单元测试', '1', '20', '2', '1', '0', '1');
-INSERT INTO `exampaperinfo` VALUES ('2', '语文-期中考试', '15', '30', '30', '1', '0', '1');
-INSERT INTO `exampaperinfo` VALUES ('3', '测试试卷', '2', '90', '4', '3', '0', '0');
-INSERT INTO `exampaperinfo` VALUES ('5', '文学基本常识', '5', '30', '10', '1', '1', '0');
-INSERT INTO `exampaperinfo` VALUES ('7', '测试导入试卷', '6', '30', '43', '4', '2', '1');
-INSERT INTO `exampaperinfo` VALUES ('8', '计算机常识', '9', '90', '61', '4', '0', '0');
+INSERT INTO `exampaperinfo` VALUES ('1', '网络安全导论期末测试', '1', '20', '2', '1', '0', '1');
+INSERT INTO `exampaperinfo` VALUES ('2', '数据库期末测试', '15', '30', '30', '1', '0', '1');
+INSERT INTO `exampaperinfo` VALUES ('3', '概率论与数理统计', '2', '90', '4', '3', '0', '0');
+INSERT INTO `exampaperinfo` VALUES ('5', '软件工程', '5', '30', '10', '1', '1', '0');
+INSERT INTO `exampaperinfo` VALUES ('7', '编译技术', '6', '30', '43', '4', '2', '1');
+INSERT INTO `exampaperinfo` VALUES ('8', 'C语言课程设计', '9', '90', '61', '4', '0', '0');
 
 -- ----------------------------
 -- Table structure for `examplaninfo`
@@ -230,16 +230,12 @@ CREATE TABLE `examplaninfo` (
   CONSTRAINT `examplaninfo_ibfk_1` FOREIGN KEY (`courseId`) REFERENCES `courseinfo` (`courseId`),
   CONSTRAINT `examplaninfo_ibfk_2` FOREIGN KEY (`classId`) REFERENCES `classinfo` (`classId`),
   CONSTRAINT `examplaninfo_ibfk_3` FOREIGN KEY (`examPaperId`) REFERENCES `exampaperinfo` (`examPaperId`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of examplaninfo
 -- ----------------------------
-INSERT INTO `examplaninfo` VALUES ('8', '9', '19', '3', '2018-10-19 15:08:08');
-INSERT INTO `examplaninfo` VALUES ('10', '4', '19', '8', '2018-10-20 13:52:36');
-INSERT INTO `examplaninfo` VALUES ('14', '9', '19', '7', '2018-10-20 15:34:11');
-INSERT INTO `examplaninfo` VALUES ('16', '8', '19', '2', '2018-10-20 14:47:44');
-INSERT INTO `examplaninfo` VALUES ('17', '7', '19', '1', '2018-10-20 14:48:14');
+INSERT INTO `examplaninfo` VALUES ('1', '8', '1', '2', '2019-04-19 15:46:42');
 
 -- ----------------------------
 -- Table structure for `examsubjectmiddleinfo`
@@ -311,10 +307,10 @@ CREATE TABLE `gradeinfo` (
 -- ----------------------------
 -- Records of gradeinfo
 -- ----------------------------
-INSERT INTO `gradeinfo` VALUES ('1', '高一');
-INSERT INTO `gradeinfo` VALUES ('2', '高二');
-INSERT INTO `gradeinfo` VALUES ('3', '高三');
-INSERT INTO `gradeinfo` VALUES ('4', '计算机1501');
+INSERT INTO `gradeinfo` VALUES ('1', '软件工程');
+INSERT INTO `gradeinfo` VALUES ('2', '日语强化');
+INSERT INTO `gradeinfo` VALUES ('3', '网络工程');
+INSERT INTO `gradeinfo` VALUES ('4', '数字媒体与技术');
 
 -- ----------------------------
 -- Table structure for `studentinfo`
@@ -329,7 +325,7 @@ CREATE TABLE `studentinfo` (
   PRIMARY KEY (`studentId`),
   KEY `FK_Reference_3` (`classId`),
   CONSTRAINT `FK_Reference_3` FOREIGN KEY (`classId`) REFERENCES `classinfo` (`classId`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of studentinfo
@@ -351,6 +347,9 @@ INSERT INTO `studentinfo` VALUES ('15', '马超', 'machao', '123456', '9');
 INSERT INTO `studentinfo` VALUES ('16', '李世明', 'lishiming', '123456', '10');
 INSERT INTO `studentinfo` VALUES ('17', '猿来学生', 'yuanlaixs', '123456', '19');
 INSERT INTO `studentinfo` VALUES ('18', '李哲', 'lizhe', '123456', '19');
+INSERT INTO `studentinfo` VALUES ('19', 'ghd', 'ghd', '123456', '20');
+INSERT INTO `studentinfo` VALUES ('20', 'zrh', 'zrh', '123456', '4');
+INSERT INTO `studentinfo` VALUES ('21', '孙昊', 'sun', '123456', '1');
 
 -- ----------------------------
 -- Table structure for `subjectinfo`
@@ -6916,7 +6915,7 @@ CREATE TABLE `teacherinfo` (
 -- Records of teacherinfo
 -- ----------------------------
 INSERT INTO `teacherinfo` VALUES ('1', '李银萍', 'liyinping', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('2', '皮长山', 'pcs', '123123', '1', '1');
+INSERT INTO `teacherinfo` VALUES ('2', '郭昊东', 'ghd', '123456', '1', '1');
 INSERT INTO `teacherinfo` VALUES ('3', '方正', 'fangzheng', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('4', '曾勇', 'zengy', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('5', '董勇', 'dongy', '123456', '0', '1');
@@ -6933,5 +6932,5 @@ INSERT INTO `teacherinfo` VALUES ('15', '谢永强', 'yongq', '123456', '0', '1'
 INSERT INTO `teacherinfo` VALUES ('16', '王小蒙', 'xiaom', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('17', '赵玉田', 'yutian', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('18', '刘英', 'yingzi', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('21', '猿来入此', 'ylrc', '123456', '1', '1');
+INSERT INTO `teacherinfo` VALUES ('21', 'Java3', 'Java3', '123456', '1', '1');
 INSERT INTO `teacherinfo` VALUES ('22', '测试教师', 'teacher', '123456', '0', '1');
