@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2019-04-19 13:32:06
+Date: 2019-04-25 15:33:46
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -41,7 +41,7 @@ CREATE TABLE `classinfo` (
   KEY `FK_Reference_1` (`gradeId`),
   CONSTRAINT `FK_Reference_1` FOREIGN KEY (`gradeId`) REFERENCES `gradeinfo` (`gradeId`),
   CONSTRAINT `classinfo_ibfk_1` FOREIGN KEY (`teacherId`) REFERENCES `teacherinfo` (`teacherId`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of classinfo
@@ -49,10 +49,9 @@ CREATE TABLE `classinfo` (
 INSERT INTO `classinfo` VALUES ('1', '软1501', '1', '2');
 INSERT INTO `classinfo` VALUES ('2', '软1502', '1', '1');
 INSERT INTO `classinfo` VALUES ('3', '软1503', '1', '3');
-INSERT INTO `classinfo` VALUES ('4', '软1504', '1', '4');
+INSERT INTO `classinfo` VALUES ('4', '软1504', '1', '2');
 INSERT INTO `classinfo` VALUES ('5', '软1505', '1', '5');
 INSERT INTO `classinfo` VALUES ('6', '软1506', '1', '6');
-INSERT INTO `classinfo` VALUES ('7', '软日1501', '2', '7');
 INSERT INTO `classinfo` VALUES ('8', '软日1502', '2', '8');
 INSERT INTO `classinfo` VALUES ('9', '软日1503', '2', '9');
 INSERT INTO `classinfo` VALUES ('10', '软日1504', '2', '10');
@@ -66,6 +65,8 @@ INSERT INTO `classinfo` VALUES ('17', '软网1505', '3', '17');
 INSERT INTO `classinfo` VALUES ('18', '软网1506', '3', '18');
 INSERT INTO `classinfo` VALUES ('19', '树莓1501', '4', '21');
 INSERT INTO `classinfo` VALUES ('20', '树莓1502', '4', '22');
+INSERT INTO `classinfo` VALUES ('21', '软1501', '1', '23');
+INSERT INTO `classinfo` VALUES ('22', '软1501', '1', '24');
 
 -- ----------------------------
 -- Table structure for `courseinfo`
@@ -235,7 +236,6 @@ CREATE TABLE `examplaninfo` (
 -- ----------------------------
 -- Records of examplaninfo
 -- ----------------------------
-INSERT INTO `examplaninfo` VALUES ('1', '8', '1', '2', '2019-04-19 15:46:42');
 
 -- ----------------------------
 -- Table structure for `examsubjectmiddleinfo`
@@ -336,13 +336,11 @@ INSERT INTO `studentinfo` VALUES ('3', '皮志高', 'pizhigao', '123456', '3');
 INSERT INTO `studentinfo` VALUES ('4', '权信', 'quanxin', '123456', '4');
 INSERT INTO `studentinfo` VALUES ('6', '寅鑫', 'xinyan', '123456', '4');
 INSERT INTO `studentinfo` VALUES ('7', '栋坤', 'dongkun', '123456', '6');
-INSERT INTO `studentinfo` VALUES ('8', '梁辰', 'liangchen', '123456', '7');
 INSERT INTO `studentinfo` VALUES ('9', '澄宇', 'chenyu', '123456', '8');
 INSERT INTO `studentinfo` VALUES ('10', '邓小飞', 'test', '123456', '2');
 INSERT INTO `studentinfo` VALUES ('11', '张君宝', 'zhangjb', '123456', '19');
 INSERT INTO `studentinfo` VALUES ('12', '张晓华', 'zhangxiaohua', '123456', '5');
 INSERT INTO `studentinfo` VALUES ('13', '张飞', 'zhangfei', '123456', '20');
-INSERT INTO `studentinfo` VALUES ('14', '关羽', 'guanyu', '123465', '7');
 INSERT INTO `studentinfo` VALUES ('15', '马超', 'machao', '123456', '9');
 INSERT INTO `studentinfo` VALUES ('16', '李世明', 'lishiming', '123456', '10');
 INSERT INTO `studentinfo` VALUES ('17', '猿来学生', 'yuanlaixs', '123456', '19');
@@ -6909,18 +6907,18 @@ CREATE TABLE `teacherinfo` (
   `adminPower` int(11) DEFAULT '0',
   `isWork` int(11) DEFAULT '0',
   PRIMARY KEY (`teacherId`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of teacherinfo
 -- ----------------------------
-INSERT INTO `teacherinfo` VALUES ('1', '李银萍', 'liyinping', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('1', '李银萍', 'liyinping', '123456', '0', '0');
 INSERT INTO `teacherinfo` VALUES ('2', '郭昊东', 'ghd', '123456', '1', '1');
 INSERT INTO `teacherinfo` VALUES ('3', '方正', 'fangzheng', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('4', '曾勇', 'zengy', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('5', '董勇', 'dongy', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('4', '曾勇', 'zengy', '123456', '0', '0');
+INSERT INTO `teacherinfo` VALUES ('5', '董勇', 'dongy', '123456', '0', '0');
 INSERT INTO `teacherinfo` VALUES ('6', '周应琴', 'zhouyq', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('7', '万红兵', 'wanhb', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('7', '万红兵', 'wanhb', '123456', '0', '0');
 INSERT INTO `teacherinfo` VALUES ('8', '黄小荣', 'hxr123', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('9', '代丽敏', 'dailm', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('10', '赵国强', 'zgq121', '123456', '0', '1');
@@ -6928,9 +6926,11 @@ INSERT INTO `teacherinfo` VALUES ('11', '刘能', 'liun', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('12', '谢广坤', 'gungk', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('13', '王长贵', 'changg', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('14', '谢大脚', 'dajiao', '123456', '0', '1');
-INSERT INTO `teacherinfo` VALUES ('15', '谢永强', 'yongq', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('15', '谢永强', 'yongq', '123456', '1', '1');
 INSERT INTO `teacherinfo` VALUES ('16', '王小蒙', 'xiaom', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('17', '赵玉田', 'yutian', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('18', '刘英', 'yingzi', '123456', '0', '1');
 INSERT INTO `teacherinfo` VALUES ('21', 'Java3', 'Java3', '123456', '1', '1');
 INSERT INTO `teacherinfo` VALUES ('22', '测试教师', 'teacher', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('23', '李昊泽', 'lhz', '123456', '0', '1');
+INSERT INTO `teacherinfo` VALUES ('24', '刘岳奇', 'lyq', '123456', '0', '1');
