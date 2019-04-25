@@ -31,8 +31,8 @@
 			<b class="form-title">所属年级：</b><form:select path="grade.gradeId" items="${grades }"
 				itemLabel="gradeName" itemValue="gradeId" class="sel"></form:select>
 			<br /><br />
-			<b class="form-title">班 主&nbsp;&nbsp;任：</b><form:select path="teacher.teacherId" items="${teachers }"
-						itemLabel="teacherName" itemValue="teacherId" class="sel"></form:select>
+			<b class="form-title">班 主 任：</b><form:select path="teacher.teacherId" items="${teachers }"
+				itemLabel="teacherName" itemValue="teacherId" class="sel"></form:select>
 			<br /><br />
 			<!-- 存放上一个班主任编号 -->
 			<input type="hidden" value="${editClass.teacher.teacherId }" name="lastTeacher" />

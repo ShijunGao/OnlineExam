@@ -69,7 +69,7 @@
 										<div class="btn-group" style="margin-top: 5px;">
 											<button type="button" class="btn btn-default btn-sm" id="studentLogin">登录</button>
 											<button type="button" class="btn btn-default btn-sm" id="studentRegister">注册</button>
-											<a href="admin/login.jsp" target="_blank" class="btn btn-default btn-sm" id="studentLogin">登录后台</a>
+											<a href="admin/login.jsp" target="_blank" class="btn btn-default btn-sm" id="studentLogin">登录后台</a>											<button type="button" class="btn btn-default btn-sm" id="studentRegister">批量注册</button>
 										</div>
 									 </c:if>
 								</li>

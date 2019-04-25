@@ -81,6 +81,7 @@
 				<dt>学生管理<img src="${path }/images/left/select_xl01.png" /></dt>
 				<dd class="first_dd"><a href="../students" target="right" id="5" class="handle-view">&emsp;所有学生&emsp;&emsp;&emsp;</a></dd>
 				<dd class="first_dd"><a href="${path }/admin/charts/studentExamCount.jsp" target="right" id="12" class="handle-view">&emsp;学生考试信息&emsp;&emsp;&emsp;</a></dd>
+				<dd class="first_dd"><a href="${path }/admin/studentRegister.jsp" target="right" id="13" class="handle-view">&emsp;批量注册&emsp;&emsp;</a></dd>
 			</dl>
 		
 			<dl class="app">
