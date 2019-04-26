@@ -57,6 +57,10 @@
 								 <h1>暂无待考信息</h1>
 								 <p>请等待教师分配</p>
 							</div>
+							<div class="col-sm-offset-2 col-sm-10">
+								 <h3>您可以进行以下操作</h3>
+								 <p><a href="reception/mockExam.html" class="btn btn-default btn-sm" >模拟考试</a></p>	
+							</div>
 						</c:otherwise>
 					</c:choose>
 				</div>
