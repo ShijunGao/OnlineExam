@@ -52,6 +52,12 @@
 							</div>
 						</div>
 						<div class="form-group">
+							 <label for="pwd" class="col-sm-2 control-label">设置PIN码</label>
+							<div class="col-sm-10">
+								<input class="form-control" type="password" placeholder="请输入PIN码以便找回密码" />
+							</div>
+						</div>
+						<div class="form-group">
 							 <label for="class" class="col-sm-2 control-label">就读班级</label>
 							<div class="col-sm-10">
 								<select id="classId" class="selectpicker" name="classInfo.classId" id="class" data-live-search="true">

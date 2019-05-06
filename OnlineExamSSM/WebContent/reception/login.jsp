@@ -13,6 +13,11 @@
     %>
 	<c:set var="path" value="<%=basePath %>"></c:set>
  	<link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+ 	<style type="text/css">
+ 		.forgetmypwd {
+ 			display: none;
+ 		}
+ 	</style>
 </head>
 <body>
 	<div>
@@ -38,8 +43,15 @@
 							<div class="col-sm-offset-2 col-sm-10">
 								<div class="checkbox">
 									 <label><input type="checkbox" name="remember" />记住我</label>
+									 <label><input type="checkbox" name="forget" id="forget-remeber" />使用PIN码登录</label>
 								</div>
 							</div>
+						</div>
+						<div class="form-group forgetmypwd">
+					 	<label for="examPaperTime" class="col-sm-2 control-label">使用PIN码登录</label>
+						<div class="col-sm-10">
+							<input class="form-control"  type="text" placeholder="请输入您的PIN码" />
+						</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-offset-2 col-sm-10">
@@ -56,5 +68,18 @@
     <script src="${path }/js/jquery.js"></script>
     <script src="${path }/js/bootstrap/bootstrap.min.js"></script>
     <script src="${path }/js/login.js"></script>
+     <script src="${path }/js/bootstrap-select/bootstrap-select.min.js"></script>
+     <script src="${path }/js/zeroModal/zeroModal.min.js"></script>
+    <script type="text/javascript">
+    	$('.selectpicker').selectpicker({
+    	    style: 'btn-default',
+    	    size: 8
+    	});
+    	$(function() {
+    		$("#forget-remeber").click(function() {
+    			$(".forgetmypwd").show("slow");
+    		});
+    	});
+    </script>
 </body>
 </html>

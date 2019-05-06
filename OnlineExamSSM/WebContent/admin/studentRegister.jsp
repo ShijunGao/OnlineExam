@@ -19,43 +19,41 @@
  		.dropdown-toggle {
  			height: 30px;
  		}
+ 		#examPaperChoose {
+ 			display: none;
+ 		}
+ 		.importToNewPaper {
+ 			display: none;
+ 		}
+ 		.tips {color: #205AA7;}
  	</style>
 </head>
 <body>
-	<div>
-		<div class="container">
-			<div class="row clearfix">
-				<div class="col-md-12 column">
-					<form class="form-horizontal" role="form" id="studentRegSub" action="">
-						<div class="form-group">
-							 <label for="validateName" class="col-sm-2 control-label">选择文件</label>
-							<div class="col-sm-10">
-								<input class="col-sm-2" name="studentName" id="validateName" type="text" placeholder="选择本地文件" />
-								<button type="button" onclick="browsefile.click()">选择文件</button>
-								<input type="file" id="browsefile" style="visibility:hidden" onchange="filepath.value=this.value">
-								
-							</div>
-						</div>					
-						<br />
-						<div class="form-group">
-							<div class="col-sm-offset-2 col-sm-10">
-								 <button type="button" class="btn btn-default btn-lg btn-primary btn-block" id="signSubmit">
-							 		批 量 注  册
-								 </button>
-							</div>
-						</div>
-					</form>
+	<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-8 column">
+			<form class="form-horizontal" role="form" action="dispatcherUpload" method="post" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="inputfile" class="col-sm-2 control-label">选择文件</label>
+					<div class="col-sm-10">
+						<input class="" name="inputfile" id="inputfile" type="file" />
+					</div>
 				</div>
-			</div>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						 <button type="submit" class="btn btn-default">提交</button>
+					</div>
+				</div>
+			</form>
 		</div>
-	</div>	
+	</div>
+</div>
 
 	<!-- js引入 -->
     <script src="${path }/js/jquery.js"></script>
-    <script src="${path }/js/zeroModal/zeroModal.min.js"></script>
-    <script src="${path }/js/login.js"></script>
     <script src="${path }/js/bootstrap/bootstrap.min.js"></script>
-    <script src="${path }/js/bootstrap-select/bootstrap-select.min.js"></script>
+     <script src="${path }/js/bootstrap-select/bootstrap-select.min.js"></script>
+     <script src="${path }/js/zeroModal/zeroModal.min.js"></script>
     <script type="text/javascript">
     	$('.selectpicker').selectpicker({
     	    style: 'btn-default',
