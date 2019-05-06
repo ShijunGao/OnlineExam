@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50725
 File Encoding         : 65001
 
-Date: 2019-04-25 15:33:46
+Date: 2019-05-06 12:57:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -134,7 +134,7 @@ INSERT INTO `examchooseinfo` VALUES ('29', '11', '7', '6544', 'A,B,D');
 INSERT INTO `examchooseinfo` VALUES ('30', '11', '7', '6545', '简答题答案');
 INSERT INTO `examchooseinfo` VALUES ('31', '11', '1', '10', 'C');
 INSERT INTO `examchooseinfo` VALUES ('32', '17', '8', '6508', 'B');
-INSERT INTO `examchooseinfo` VALUES ('33', '17', '8', '6523', '多做项目，作实战项目，跟着猿来入此站长做实战项目。');
+INSERT INTO `examchooseinfo` VALUES ('33', '17', '8', '6523', '多做项目');
 INSERT INTO `examchooseinfo` VALUES ('34', '17', '8', '6525', 'A,B,C,D');
 INSERT INTO `examchooseinfo` VALUES ('35', '17', '8', '6541', 'B');
 INSERT INTO `examchooseinfo` VALUES ('36', '17', '8', '6542', 'C');
@@ -144,7 +144,7 @@ INSERT INTO `examchooseinfo` VALUES ('39', '17', '8', '6545', '简答题答案')
 INSERT INTO `examchooseinfo` VALUES ('40', '17', '8', '6546', '帅得掉渣');
 INSERT INTO `examchooseinfo` VALUES ('41', '17', '1', '10', 'C');
 INSERT INTO `examchooseinfo` VALUES ('42', '18', '8', '6508', 'B');
-INSERT INTO `examchooseinfo` VALUES ('43', '18', '8', '6523', '多做项目，作实战项目，跟着猿来入此站长做实战项目。');
+INSERT INTO `examchooseinfo` VALUES ('43', '18', '8', '6523', '多做项目');
 INSERT INTO `examchooseinfo` VALUES ('44', '18', '8', '6525', 'A,B,C,D');
 INSERT INTO `examchooseinfo` VALUES ('45', '18', '8', '6541', 'B');
 INSERT INTO `examchooseinfo` VALUES ('46', '18', '8', '6542', 'C');
@@ -207,12 +207,12 @@ CREATE TABLE `exampaperinfo` (
 -- ----------------------------
 -- Records of exampaperinfo
 -- ----------------------------
-INSERT INTO `exampaperinfo` VALUES ('1', '网络安全导论期末测试', '1', '20', '2', '1', '0', '1');
-INSERT INTO `exampaperinfo` VALUES ('2', '数据库期末测试', '15', '30', '30', '1', '0', '1');
-INSERT INTO `exampaperinfo` VALUES ('3', '概率论与数理统计', '2', '90', '4', '3', '0', '0');
-INSERT INTO `exampaperinfo` VALUES ('5', '软件工程', '5', '30', '10', '1', '1', '0');
-INSERT INTO `exampaperinfo` VALUES ('7', '编译技术', '6', '30', '43', '4', '2', '1');
-INSERT INTO `exampaperinfo` VALUES ('8', 'C语言课程设计', '9', '90', '61', '4', '0', '0');
+INSERT INTO `exampaperinfo` VALUES ('1', 'Introduction to Network Science', '1', '20', '2', '1', '0', '1');
+INSERT INTO `exampaperinfo` VALUES ('2', 'Database Systems	', '15', '30', '30', '1', '0', '1');
+INSERT INTO `exampaperinfo` VALUES ('3', 'Discrete Mathematics', '2', '90', '4', '3', '0', '0');
+INSERT INTO `exampaperinfo` VALUES ('5', 'Software Engineering', '5', '30', '10', '1', '1', '0');
+INSERT INTO `exampaperinfo` VALUES ('7', 'Computer network', '6', '30', '43', '4', '2', '1');
+INSERT INTO `exampaperinfo` VALUES ('8', 'Program Design Basics and C Programming', '8', '90', '51', '4', '0', '0');
 
 -- ----------------------------
 -- Table structure for `examplaninfo`
@@ -231,7 +231,7 @@ CREATE TABLE `examplaninfo` (
   CONSTRAINT `examplaninfo_ibfk_1` FOREIGN KEY (`courseId`) REFERENCES `courseinfo` (`courseId`),
   CONSTRAINT `examplaninfo_ibfk_2` FOREIGN KEY (`classId`) REFERENCES `classinfo` (`classId`),
   CONSTRAINT `examplaninfo_ibfk_3` FOREIGN KEY (`examPaperId`) REFERENCES `exampaperinfo` (`examPaperId`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of examplaninfo
@@ -269,7 +269,6 @@ INSERT INTO `examsubjectmiddleinfo` VALUES ('22', '7', '6543');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('23', '7', '6544');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('24', '7', '6545');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('25', '7', '6546');
-INSERT INTO `examsubjectmiddleinfo` VALUES ('36', '8', '6508');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('37', '8', '6523');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('38', '8', '6525');
 INSERT INTO `examsubjectmiddleinfo` VALUES ('39', '8', '6541');
@@ -308,9 +307,9 @@ CREATE TABLE `gradeinfo` (
 -- Records of gradeinfo
 -- ----------------------------
 INSERT INTO `gradeinfo` VALUES ('1', '软件工程');
-INSERT INTO `gradeinfo` VALUES ('2', '日语强化');
-INSERT INTO `gradeinfo` VALUES ('3', '网络工程');
-INSERT INTO `gradeinfo` VALUES ('4', '数字媒体与技术');
+INSERT INTO `gradeinfo` VALUES ('2', '软件日强');
+INSERT INTO `gradeinfo` VALUES ('3', '网络安全');
+INSERT INTO `gradeinfo` VALUES ('4', '数字媒体');
 
 -- ----------------------------
 -- Table structure for `studentinfo`
@@ -325,7 +324,7 @@ CREATE TABLE `studentinfo` (
   PRIMARY KEY (`studentId`),
   KEY `FK_Reference_3` (`classId`),
   CONSTRAINT `FK_Reference_3` FOREIGN KEY (`classId`) REFERENCES `classinfo` (`classId`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of studentinfo
@@ -343,11 +342,13 @@ INSERT INTO `studentinfo` VALUES ('12', '张晓华', 'zhangxiaohua', '123456', '
 INSERT INTO `studentinfo` VALUES ('13', '张飞', 'zhangfei', '123456', '20');
 INSERT INTO `studentinfo` VALUES ('15', '马超', 'machao', '123456', '9');
 INSERT INTO `studentinfo` VALUES ('16', '李世明', 'lishiming', '123456', '10');
-INSERT INTO `studentinfo` VALUES ('17', '猿来学生', 'yuanlaixs', '123456', '19');
+INSERT INTO `studentinfo` VALUES ('17', '王', 'wangwei', '123456', '19');
 INSERT INTO `studentinfo` VALUES ('18', '李哲', 'lizhe', '123456', '19');
 INSERT INTO `studentinfo` VALUES ('19', 'ghd', 'ghd', '123456', '20');
 INSERT INTO `studentinfo` VALUES ('20', 'zrh', 'zrh', '123456', '4');
 INSERT INTO `studentinfo` VALUES ('21', '孙昊', 'sun', '123456', '1');
+INSERT INTO `studentinfo` VALUES ('22', '高', 'gao', '123456', '16');
+INSERT INTO `studentinfo` VALUES ('23', '小丽', 'zw', '123456', '1');
 
 -- ----------------------------
 -- Table structure for `subjectinfo`
@@ -377,7 +378,7 @@ CREATE TABLE `subjectinfo` (
 -- ----------------------------
 -- Records of subjectinfo
 -- ----------------------------
-INSERT INTO `subjectinfo` VALUES ('1', '如何获取有保障的项目教程源码？', '百度', '谷歌', '360', '从猿来入此获取', '', '10', '0', '4', '4', '1', '2');
+INSERT INTO `subjectinfo` VALUES ('1', '如何获取有保障的项目教程源码？', '百度', '谷歌', '360', '搜狐', '', '10', '0', '4', '4', '1', '2');
 INSERT INTO `subjectinfo` VALUES ('2', '什么被人们称其为“地球的肾”：,', '热带雨林', '湿地', '海洋', '陆地', '', '2', '0', '1', '3', '2', '0');
 INSERT INTO `subjectinfo` VALUES ('3', '我国明代医学家李时珍编写医学巨著是：', '《齐民要术》', '《物种起源》', '《本草纲目》', '《扁鹊经》', 'C', '2', '0', '4', '1', '0', '0');
 INSERT INTO `subjectinfo` VALUES ('4', '柑橘主要分布在南方，苹果主要分布在北方，造成这一分布差异的主要原因：', '湿度', '阳光', '温度', '水分', 'C', '2', '0', '4', '1', '0', '0');
