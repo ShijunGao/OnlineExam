@@ -15,14 +15,32 @@
  	<link href="${path }/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body style="background-color: #EEEEEE;">
-	<div class="jumbotron" style="height: 630px;padding-top: 100px; padding-bottom: 0px; margin-bottom: 0px;">
-		<div style="padding: 20px;">
-		<img src="${path }/images/reception/home-bg.png" width="100%"/>
+	<div class="jumbotron" style="height: 630px;padding-top: 50px; padding-bottom: 0px; margin-bottom: 0px;">
+		<div style="padding: 10px;">
+			<span style="margin-top: 25px;width: 211px; height: 350px; line-height: 35px;text-align: center;" id="date_time" style="color: #000;"></span>
+			<img style="background" src="${path }/images/reception/home-bg.png" width="100%"/>
 		</div>
 	</div>
 
 	<!-- js引入 -->
     <script src="${path }/js/jquery.js"></script>
     <script src="${path }/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript">
+		date_time();
+		setInterval("date_time()", 1000);
+		function date_time() {
+    		var date = new Date();
+    		var year = date.getFullYear();
+    		var month = date.getMonth()+1;
+    		var day = date.getDate();
+    		var hour = date.getHours();
+    		var minutes = date.getMinutes();
+    		var seconds = date.getSeconds();
+    		if(parseInt(seconds) >= 0 && parseInt(seconds) < 10) {
+    			seconds = "0"+seconds;
+    		}
+    		$("#date_time").text(year+"年"+month+"月"+day+"日"+hour+"时"+minutes+"分"+seconds+"秒");
+    	}
+	</script>
 </body>
 </html>

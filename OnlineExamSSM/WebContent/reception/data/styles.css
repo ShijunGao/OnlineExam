@@ -2,30 +2,20 @@
   font-family:'Arial Normal', 'Arial';
   font-weight:400;
   font-style:normal;
-  font-size:14px;
-  color:#666666;
+  font-size:13px;
+  color:#333333;
   text-align:center;
   line-height:normal;
 }
-._默认样式 {
+.box_1 {
 }
 .box_2 {
 }
 .box_3 {
 }
-.ellipse {
-}
-.flow_shape {
-}
-.image {
+._图片 {
 }
 .button {
-}
-.primary_button {
-  color:#FFFFFF;
-}
-.link_button {
-  color:#169BD5;
 }
 ._一级标题 {
   font-family:'Arial Normal', 'Arial';
@@ -41,11 +31,31 @@
   font-size:24px;
   text-align:left;
 }
-._分类按纽 {
+._三级标题 {
   font-family:'Arial Normal', 'Arial';
   font-weight:bold;
   font-style:normal;
   font-size:18px;
+  text-align:left;
+}
+._四级标题 {
+  font-family:'Arial Normal', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:14px;
+  text-align:left;
+}
+._五级标题 {
+  font-family:'Arial Normal', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  text-align:left;
+}
+._六级标题 {
+  font-family:'Arial Normal', 'Arial';
+  font-weight:bold;
+  font-style:normal;
+  font-size:10px;
   text-align:left;
 }
 .label {
@@ -55,26 +65,13 @@
 ._文本段落 {
   text-align:left;
 }
-._形状 {
-}
-._水平线 {
-}
-._形状1 {
-  font-family:'Arial Normal', 'Arial';
-  font-weight:400;
-  font-style:normal;
-  font-size:13px;
-  color:#333333;
-  text-align:right;
-  line-height:normal;
-}
-._鼠标按下文本链接时 {
-}
 .line {
 }
 .text_field {
   color:#000000;
   text-align:left;
+}
+.menu_item {
 }
 .text_area {
   color:#000000;
@@ -88,48 +85,36 @@
   color:#000000;
   text-align:left;
 }
+.checkbox {
+  text-align:left;
+}
 .radio_button {
   text-align:left;
 }
 ._流程形状 {
-  color:#333333;
 }
 .html_button {
   text-align:center;
 }
-._连接线 {
-  color:#333333;
+.table_cell {
 }
-.sticky_2 {
+.link_button {
+  color:#169BD5;
+}
+.primary_button {
+  color:#FFFFFF;
+}
+.ellipse {
+}
+.arrow {
+}
+.marker {
+  color:#FFFFFF;
+}
+.tree_node {
   text-align:left;
 }
-.snapshot {
+.image {
 }
 .icon {
-}
-._默认样式1 {
-}
-.box_1 {
-}
-.shape {
-}
-._形状2 {
-}
-.shape1 {
-}
-.image1 {
-  color:#000000;
-}
-.label1 {
-  font-size:14px;
-  text-align:left;
-}
-._形状3 {
-  font-size:13px;
-  color:#000000;
-}
-._文本段落1 {
-  font-size:13px;
-  color:#000000;
-  text-align:left;
 }
